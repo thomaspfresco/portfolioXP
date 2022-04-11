@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="canonical" href="https://html5-templates.com/" />
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>Windows Template</title>
+
+	<script>
+		function refreshPage() {
+			window.location.reload();
+		} 
+	</script>
+
+	<script type="text/javascript">
+		var opacity = 0;
+		var intervalID = 0;
+
+		setTimeout(function fadeout() {
+			setInterval(hide, 25);
+		}, 2000);
+
+		function hide() {
+			var d = document.getElementById("desktop");
+			var t = document.getElementById("taskbar");
+			opacity = Number(window.getComputedStyle(d).getPropertyValue("opacity"))
+
+			if (opacity < 1) {
+				opacity = opacity + 0.05;
+				d.style.opacity = opacity;
+				t.style.opacity = opacity;
+			}
+			else {
+				clearInterval(intervalID);
+			}
+		}
+	</script>
+
+</head>
+
+<body>
+
+
+	<div id="loadScreen">
+		<img src="gifs/start.gif" class="loading" height="500" width="500">
+	</div>
+
+	<div id="desktop">
+
+		<div class="window closed" data-title="Thomas Fresco">
+			Window content
+		</div>
+		<div class="window closed" data-title="Código">
+			Second Window
+		</div>
+		<div class="window closed" data-title="Arduino">
+
+			<p>Como dizia Marco Paulo, “Eu tenho dois amores”. Da junção do mundo da informática e do mundo da música,
+				surge este projeto Arduino.</p>
+			<p><strong>Não é, de facto, inovador, o uso de resistências elétricas num circuito de micro-processador, com
+					o intuito de tirar partido da, use-se o termo inglês, capacitivity de um condutor.</strong></p>
+			<p><strong>Talvez o seja, quando se junta a conversão, em informação MIDI, dos impulsos gerados, tornando
+					qualquer objeto capacitivo num instrumento a sério, totalmente compatível com os DAWs mais
+					conhecidos.</strong></p>
+			<hr />
+			<h1>Arduino IDE, Ableton Live, Autodesk Thinkercad Circuits, hairless-midiserial</h1>
+
+		</div>
+		<div class="window closed" data-title="Comunicação Gráfica">
+			Window content
+		</div>
+		<div class="window closed" data-title="Áudio">
+			Window content
+		</div>
+		<div class="window closed" data-title="Fotografia">
+			Second Window
+		</div>
+		<div class="window closed" data-title="Vídeo">
+			Third window starts closed
+		</div>
+		<div class="window closed" data-title="Referêcias">
+			<p><a href="https://html5-templates.com/preview/windows.html" target="_blank"
+					rel="noopener noreferrer">Template - html, css e javascript</a></p>
+			<p><a href="https://win98icons.alexmeub.com/" target="_blank" rel="noopener noreferrer">Windows 98 icon
+					pack</a></p>
+			<p><a href="https://www.vecteezy.com/vector-art/95039-free-social-media-icons?irclickid=wowQbRTi4xyIULdz3f1lRXomUkGVkvQWgz6xzs0&utm_medium=affiliate&utm_source=impact&irgwc=1"
+					target="_blank" rel="noopener noreferrer">social media icon pack</a></p>
+		</div>
+
+		<div class="internet closed">
+			<div class="internetHeader">
+				Error: Internet Explorer
+				<div class=buttonClose>
+					x
+				</div>
+			</div>
+			<div class="internetIcon">
+				<img src="icons/msg_error.ico" alt="profile" width="50" height="50">
+			</div>
+			<div class="internetText">
+				Internet Explorer deixou de funcionar.
+			</div>
+			<div class="button">
+				OK
+			</div>
+		</div>
+
+		<!--thomas fresco-->
+
+		<div class="exe closed" style="height: 447px;">
+			<div class="pictureHeader">
+				<strong>thomas.jpeg</strong>
+				<div class="exeClose" style="top: 12px;">
+					x
+				</div>
+			</div>
+			<div class="exeContent" style="padding-top: 4px;">
+				<img src="pictures/thomas.jpg" alt="codigo" width="300"></a>
+			</div>
+		</div>
+
+		<!--codigo-->
+
+		<div class="exe closed">
+			<div class="internetHeader">
+				<strong>Código.exe</strong>
+				<div class="exeClose">
+					x
+				</div>
+			</div>
+			<div class="exeContent" style="padding-top: 4px;">
+				<img src="gifs/codigo.gif" alt="codigo" width="300" height="300"></a>
+			</div>
+		</div>
+
+		<div class="popup closed">
+			<div class="popupHeader">
+				GitHub
+				<div class=popupClose>
+					x
+				</div>
+			</div>
+			<div class="internetIcon">
+				<img src="icons/loudspeaker_rays.ico" alt="profile" width="50" height="50">
+			</div>
+			<div class="internetText">
+				pretende abrir o repositório GitHub?
+			</div>
+			<div class="button"> 
+				OK
+			</div>
+		</div>
+
+		<!--arduino-->
+
+		<div class="exe closed">
+			<div class="internetHeader">
+				<strong>Arduino.exe</strong>
+				<div class="exeClose">
+					x
+				</div>
+			</div>
+			<div class="exeContent" style="padding-top: 4px;">
+				<img src="gifs/arduino.gif" alt="arduino" width="300" height="300">
+			</div>
+		</div>
+
+		<div class="exe closed" style="height: 447px;">
+			<div class="pictureHeader">
+				<strong>Arduino.mov</strong>
+				<div class="exeClose">
+					x
+				</div>
+			</div>
+			<div class="exeContent" style="padding-top: 4px;">
+				<a href="https://www.youtube.com/watch?v=kl2YZFYL8FU" target="_blank" rel="noopener noreferrer"><img src="pictures/arduino.jpg" alt="codigo" width="300" style="cursor: pointer;"></a>
+			</div>
+		</div>
+
+		<!--audio-->
+
+		<div class="popup closed">
+			<div class="popupHeader">
+				Youtube
+				<div class=popupClose>
+					x
+				</div>
+			</div>
+			<div class="internetIcon">
+				<img src="icons/loudspeaker_rays.ico" alt="profile" width="50" height="50">
+			</div>
+			<div class="internetText">
+				pretende abrir o link Youtube?
+			</div>
+			<div class="button"> 
+				OK
+			</div>
+		</div>
+
+		<div id="taskbar">
+		</div>
+
+		<div id="icons">
+			<a class="openWindow" data-id="0">
+				<img src="icons/directory_open_file_mydocs.ico" alt="profile" width="50" height="50">
+
+			</a>
+			<a class="openWindow" data-id="1"><img src="icons/console_prompt.ico" alt="codigo" width="50"
+					height="50"></a>
+			<a class="openWindow" data-id="2"><img src="icons/expansion_board.ico" alt="arduino" width="50"
+					height="50"></a>
+			<a class="openWindow" data-id="3"><img src="icons/paintbrush.ico" alt="comunicacao" width="50"
+					height="50"></a>
+			<a class="openWindow" data-id="4"><img src="icons/cd_audio_cd_a.ico" alt="audio" width="50" height="50"></a>
+			<a class="openWindow" data-id="5"><img src="icons/camera.ico" alt="fotografia" width="50" height="50"></a>
+			<a class="openWindow" data-id="6"><img src="icons/media_player.ico" alt="video" width="50" height="50"></a>
+		</div>
+
+		<div id="iconsRight">
+			<a class="openWindow" data-id="7"><img src="icons/help_book_big.ico" alt="referencias" width="50"
+					height="50"></a>
+			<a class="openWindow" data-id="8"><img src="icons/url1.ico" alt="explorer" width="50" height="50"></a>
+		</div>
+
+		<div id="recycleBin">
+			<a class="openWindow" data-id="9"><img id="imgRecBin" src="icons/recycle_bin_empty.ico" alt="recycleBin"
+					width="50" height="50"></a>
+		</div>
+
+		<div id="linkedin">
+			<a href="https://www.linkedin.com/in/thomas-fresco-a19298235" target="_blank" rel="noopener noreferrer"
+				class="socialContent"> <img src="icons/linkedin.png" height="23" alt="LinkedIn"></a>
+		</div>
+		<div id="github">
+			<a href="https://github.com/thomaspfresco" target="_blank" rel="noopener noreferrer" class="socialContent">
+				<img src="icons/github.png" height="23" alt="GitHub"></a>
+		</div>
+		<div id="instagram">
+			<a href="https://www.instagram.com/thomaspfresco/" target="_blank" rel="noopener noreferrer"
+				class="socialContent"> <img src="icons/instagram.png" height="23" alt="Instagram"></a>
+		</div>
+		<div id="mail">
+			<a href="mailto:thomas@fresco.pt" target="_blank" rel="noopener noreferrer"
+				class="mailContent">thomas@fresco.pt</a>
+		</div>
+
+		<div id="start">
+			<img src="icons/p2.png" height="18" alt="portfolioXP" onClick="refreshPage()" class="socialContent"></a>
+		</div>
+
+	</div>
+
+	<div id="blueScreen"> 
+			<img src="pictures/blueScreen.jpeg" class="loading" height="700">
+	</div>
+</body>
+
+</html>
