@@ -20,7 +20,7 @@ input,select{vertical-align:middle}
     src: url("fonts/Windows Regular.ttf");
   }
 
-/*  ::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     width: 15px;
   }
 
@@ -40,10 +40,36 @@ input,select{vertical-align:middle}
   ::-webkit-scrollbar-thumb:hover {
     background: #c2c2c2; 
     cursor: pointer;
-  }*/
+  }
+
+.imageContainer {
+    background: #000;
+    cursor: pointer; 
+    height: 300px;
+    position:absolute;
+}
+
+.textImagem {
+    background-color: rgba(0,0,0,0.6);
+    position:absolute;
+    height: 100%;
+    width:100%;
+    text-align: center;
+    top: 0%;
+    color:#FFF;
+    opacity: 0;
+    transition: .2s ease;
+    font-size: 20px;
+    font-family: windowsFont;
+}
+
+.textImagem:hover {
+    opacity: 1;
+    transition: .2s ease;
+}
 
 #blueScreen {
-    background: #000;
+    background: #0200ac;
     position:fixed;
     z-index: 1000;
     height: 100%;
@@ -196,8 +222,8 @@ input,select{vertical-align:middle}
     text-align: justify;
     background: #EEE;
 	border-radius: 0 0 1px 1px;
-    /*overflow-y: scroll;
-    overflow-x: hidden;*/
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .windowHeader > strong {
     float: left;
@@ -290,6 +316,7 @@ input,select{vertical-align:middle}
 }
 
 #recycleBin {
+    background: none;
 	position: absolute;
     right: 20px;
 	z-index: 10;
@@ -689,35 +716,11 @@ input,select{vertical-align:middle}
     border-right: 2px solid #FFF;
 }
 
-/*Demo styles BEGIN*/
-
-#window0 {	top: 20px;	left: 240px;}
-#window1 {	top: 400px; left: 120px;}
-#window2 {	top: 250px; left: 300px;}
-#window3 {	top: 125px; left: 420px;}
-#window4 {	top: 20px;	left: 240px;}
-#window5 {	top: 400px; left: 120px;}
-#window6 {	top: 250px; left: 300px;}
 #window0 .wincontent {	width: 660px; height: 400px;	}
 #window1 .wincontent {	width: 500px; height: 300px;	}
 #window2 .wincontent {	width: 400px; height: 350px;	}
-#window3 .wincontent {	width: 400px; height: 350px;	}
-@media screen and (max-width:960px){
-	#window0 {	left: 10px;	}
-	#window3 {	left: 50px;	}	
-}
-@media screen and (max-width:770px){
-	#window0 .wincontent {	width: 460px;	}
-	#window2 {	left: 100px;	}
-	#window1 {	top: 190px;	left: -5px;	}
-}
-@media screen and (max-width:540px){
-#window0 .wincontent {	width: 230px; height: 200px;	}
-#window3 .wincontent {
-    width: 275px;
-    height: auto;
-}
-#window3 {    top: 9px;    left: 10px;	}
-#window2 {    left: -118px;	}
-#window1 .wincontent {    width: auto;    height: 300px;	}
-}
+#window3 .wincontent {	width: 500px; height: 350px;	}
+#window4 .wincontent {	width: 500px; height: 300px;	}
+#window5 .wincontent {	width: 500px; height: 350px;	}
+#window6 .wincontent {	width: 660px; height: 400px;	}
+#window7 .wincontent {	width: 400px; height: 350px;	}
