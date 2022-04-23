@@ -95,12 +95,6 @@ input,select{vertical-align:middle}
     margin:auto;
 }
 
-.loadingBlue {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #desktop {
 	font-family: Arial, Helvetica, sans-serif;
     opacity: 0;
