@@ -536,6 +536,7 @@ $(document).ready(function () {
 	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 		document.querySelector('[id="blueScreen"]').style.display = "block";
 		document.querySelector('[id="blueScreen"]').style.margin = "auto";
+		document.getElementById("loadingBlue").height = "100px";
 	}
 
 	$(".window").each(function () {      		// window template
