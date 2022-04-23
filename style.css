@@ -717,11 +717,11 @@ input,select{vertical-align:middle}
     border-right: 2px solid #FFF;
 }
 
-#window0 .wincontent {	width: 660px; height: 400px;	}
-#window1 .wincontent {	width: 500px; height: 300px;	}
-#window2 .wincontent {	width: 400px; height: 350px;	}
-#window3 .wincontent {	width: 500px; height: 350px;	}
-#window4 .wincontent {	width: 500px; height: 300px;	}
-#window5 .wincontent {	width: 500px; height: 350px;	}
-#window6 .wincontent {	width: 660px; height: 400px;	}
-#window7 .wincontent {	width: 400px; height: 350px;	}
+#window0 .wincontent {width: 660px; height: 400px;}
+#window1 .wincontent {width: 500px; height: 300px;}
+#window2 .wincontent {width: 400px; height: 350px;}
+#window3 .wincontent {width: 500px; height: 350px;}
+#window4 .wincontent {width: 500px; height: 300px;}
+#window5 .wincontent {width: 500px; height: 350px;}
+#window6 .wincontent {width: 660px; height: 400px;}
+#window7 .wincontent {width: 400px; height: 350px;}
