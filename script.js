@@ -536,6 +536,10 @@ $(document).ready(function () {
 	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 		document.querySelector('[id="blueScreen"]').style.display = "block";
 		document.querySelector('[id="blueScreen"]').style.margin = "auto";
+		let aux1 = 1080*(w*0.0015);
+		let aux2 = 1080*(w*0.0015);
+		document.getElementById("blue").style.width = aux1+"px";
+		document.getElementById("blue").style.height = aux2+"px";
 	}
 
 	$(".window").each(function () {      		// window template
