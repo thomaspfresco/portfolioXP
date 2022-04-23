@@ -74,6 +74,7 @@ input,select{vertical-align:middle}
     z-index: 1000;
     height: 100%;
     width:100%;
+    
     display: none;
 }
 
@@ -92,6 +93,12 @@ input,select{vertical-align:middle}
     right:0;
     bottom:0;
     margin:auto;
+}
+
+.loadingBlue {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #desktop {
