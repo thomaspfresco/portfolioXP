@@ -534,6 +534,7 @@ function closePopup(id) {
 $(document).ready(function () {
 
 	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		document.getElementById("blue").src = "pictures/blueScreen2.jpg";
 		document.querySelector('[id="blueScreen"]').style.display = "block";
 		document.querySelector('[id="blueScreen"]').style.margin = "auto";
 		let aux1 = 1080*(w*0.0015);

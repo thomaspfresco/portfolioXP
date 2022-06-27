@@ -220,7 +220,7 @@ input,select{vertical-align:middle}
     /*margin: 2px;*/
     font-family: windowsFont;
     font-size: 18px;
-    text-align: justify;
+    /*text-align: justify;*/
     background: #EEE;
 	border-radius: 0 0 1px 1px;
     overflow-y: scroll;
