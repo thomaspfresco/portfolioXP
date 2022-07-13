@@ -622,7 +622,7 @@ $(document).ready(function () {
 	$(".button").click(function () {
 		if ($(this).parent().attr("popupId") == 0) {
 			closePopup($(this).parent().attr("popupId"))
-			window.open("https://github.com/thomaspfresco/LEI_portfolio", '_blank');
+			window.open("https://github.com/thomaspfresco/portfolioLEI", '_blank');
 		}
 		else if ($(this).parent().attr("popupId") == 1) {
 			closePopup($(this).parent().attr("popupId"))
