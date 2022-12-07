@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="canonical" href="https://html5-templates.com/" />
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>portfolioXP</title>
+
+	<script>
+		function refreshPage() {
+			window.location.reload();
+		} 
+	</script>
+
+	<script type="text/javascript">
+		var opacity = 0;
+		var intervalID = 0;
+
+		setTimeout(function fadeout() {
+			setInterval(hide, 25);
+		}, 2000);
+
+		function hide() {
+			var d = document.getElementById("desktop");
+			var t = document.getElementById("taskbar");
+			opacity = Number(window.getComputedStyle(d).getPropertyValue("opacity"))
+
+			if (opacity < 1) {
+				opacity = opacity + 0.05;
+				d.style.opacity = opacity;
+				t.style.opacity = opacity;
+			}
+			else {
+				clearInterval(intervalID);
+			}
+		}
+	</script>
+
+</head>
+
+<body>
+
+
+	<div id="loadScreen">
+		<img src="gifs/start.gif" class="loading" height="500" width="500">
+	</div>
+
+	<div id="desktop">
+
+		<div class="window closed" data-title="Thomas Fresco">
+			<p>De nome próprio Thomas, herdou Pereira da mãe, professora de línguas, e Fresco do homem que dizem ser seu pai, um tal designer gráfico. Nascido em 2001, é canhoto ferrenho, pés incluídos, e cedo percebeu que a bola não era o seu talento. </p>
+			<p> Licenciado em Engenharia Informática na cidade dos estudantes, contrariou a vontade dos avós, que queriam um neto médico. Apaixonado pelo som, envergou prematuro pelos trilhos da música indie portuguesa com as suas bandas, deixando ainda espaço no seu corazon para humor, fotografia e ilustração. </p>
+			<p> Frescamente atraído pelo inusitado, Thomas é um cientista com perfil de artista, diriam os psicólogos.</p>
+
+		</div>
+		<div class="window closed" data-title="Código">
+			<p>Engenharia Informática, na Faculdade de Ciências e Tecnologia da Universidade de Coimbra (FCTUC), é um curso muito abrangente. 
+				O conjunto dos numerosos projetos desenvolvidos ao longo da licenciatura
+				formam um portfólio bastante completo. 
+			</p>
+			<br>
+			<h1>Linguagens de Programação abordadas</h1>
+			<hr />
+			<li>C</li>
+			<li>C++</li>
+			<li>Matlab</li>
+			<li>Assembly (MIPS)</li>
+			<li>Python (+ django framework)</li>
+			<li>Java (+ Spring Boot framework)</li>
+			<li>PostgreSQL (+ Postman API Platform)</li>
+
+		</div>
+		<div class="window closed" data-title="Arduino">
+			<h1>FreshFruitMIDI</h1>
+			<hr />
+			<p>Como dizia Marco Paulo, “Eu tenho dois amores”. Da junção do mundo da informática e do mundo da música,
+				surge este projeto Arduino.</p>
+			<p>Não é, de facto, inovador, o uso de resistências elétricas num circuito de micro-processador, com
+					o intuito de tirar partido da, use-se o termo inglês, capacitivity de um condutor.</p>
+			<p>Talvez o seja, quando se junta a conversão, em informação MIDI, dos impulsos gerados, tornando
+					qualquer objeto capacitivo num instrumento a sério, totalmente compatível com os DAWs mais
+					conhecidos.</p>
+			<br>
+			<h1>Software</h1>
+			<hr />
+			<li>Arduino IDE</li>
+			<li>Ableton Live 11</li>
+			<li>hairless-midiserial</li>
+			<li>Autodesk Thinkercad Circuits</li>
+
+		</div>
+		<div class="window closed" data-title="Comunicação Gráfica">
+			<p>Não sou designer. Mas quero sê-lo. Muito. O que não quero, mesmo, é fazer parte daquele (grande) 
+				grupo de pessoas que acha que Design é apenas aquilo que, na verdade, é Design Gráfico. 
+				Não obstante, este último representa uma grande fatia do mundo do Design.</p>
+			<br>
+			<h1>Contexto Académico</h1>
+			<hr />
+			<p>No âmbito da cadeira de 3º ano "Processos de Gestão e Inovação", foi simulada (em trabalho de grupo) a criação de uma empresa startup, "Notify.me", cuja comunicação visual foi, na totalidade, feita por mim. </p>
+			<p>Este ano, tive o privilégio de desenvolver toda a comunicação visual do carro dos finalistas de Engenharia Informática (FCTUC).</p>
+			<p>O estudo da típica camisola do curso, tão procurada pelos futuros informáticos, foi, neste ano também, elaborado por mim.</p>
+			<br>
+			<h1>Design com Lata</h1>
+			<hr />
+			<p>O ano passado, fui incentivado a participar no concurso “Design com Lata”, organizado pela "ANICP". 
+			Fui o único participante oriundo de um curso não artístico, entre as 125 inscrições.</p>	
+			<p>Mesmo não tendo marcado presença no pódio, o meu trabalho foi um dos escolhidos para 2 exposições, uma no Museu de Marinha, Lisboa, outra no Museu de Portimão, Algarve.</p>
+			<br>
+			<h1>Software</h1>
+			<hr />
+			<li>Inkscape</li>
+			<li>Adobe Ilustrator</li>
+			<li>Adobe InDesign</li>
+			<li>Adobe Photoshop</li>
+			<li>Adobe Premiere Pro</li>
+		</div>
+
+		<div class="window closed" data-title="Áudio">
+			<p>Algures entre o analógico e o digital, entre o Rock e a Eletrónica, está FUGUE. 
+				Desde 2018, ano de génese, este trio indie conta comigo na guitarra, nos sintetizadores e na percussão, 
+				na composição de música original que bem assenta em todas as formas de dançar.</p>
+			<p>SARS-CoV-2, o mais recente e famoso obstáculo de todos os intervenientes na cultura (ativa ou passivamente), 
+				obrigou a banda a adiar o lançamento do seu primeiro álbum para finais de 2022.</p>
+			<p>O primeiro single, Keep Walking, estreou-se no passado mês de Maio, cuja produção, mistura e masterização foram da minha responsabilidade.</p>
+			<br>
+			<h1>Software</h1>
+			<hr />
+			<li>Ableton Live 11</li>
+			<li>Izotope Ozone 9</li>
+		</div>
+
+		<div class="window closed" data-title="Fotografia">
+			<p>Chamar-me fotógrafo, por si só, é uma hipérbole. 
+				Ainda assim, atrevo-me, pontualmente, a sair à rua para fazer sessões em regime de hobby, 
+				sejam paisagísticas ou de retrato.</p>
+			<p>Sony a6000, modelo icónico com quase 10 anos, é a máquina mirrorless que me acompanha, em relação simbiótica com a Sony 18-105mm f/4.</p>
+			<p>Dos numerosos projetos abertos em Photoshop, extrai-se um espectro que vai desde a simples correção de exposição fotográfica até à abordagem mais experimental.</p>
+			<br>
+			<h1>Retrato</h1>
+			<hr />
+			<p>A janela "retrato.gif" alterna entre 2 duas fotografias, uma de um modelo masculino, Eduardo Rodrigues, outra de um modelo feminino, Inês Azevedo.</p>
+			<br>
+			<h1>Experimental</h1>
+			<hr />
+			<p>A janela "experimental.gif" alterna entre 2 imagens, um "antes" e um "depois". O "antes" traduz-se na fotografia original, em ambiente de loja. 
+				O "depois" tem como base a mesma imagem, trabalhada com base em recorte, sobreposição de novas camadas e colorgrade. 
+			</p>
+			<br>
+			<h1>Objeto</h1>
+			<hr />
+			<p>A janela "objeto.gif" alterna entre 2 fotografias de 2 obras expostas no Museu Nacional de Arte da Catalunha, em Barcelona.</p>
+			<br>
+			<h1>Software</h1>
+			<hr />
+			<li>Adobe Photoshop</li>
+		</div>
+		<div class="window closed" data-title="Vídeo">
+			<h1>20</h1>
+			<hr />
+			<p>	Existem exatamente 20 formas diferentes de começar um jogo de xadrez. 20. Símbolo químico do Cálcio, e indicativo telefónico do Egito. 20. 
+				Um ouvido perfeito consegue ouvir sons com frequências entre os 20 e os 20 000 Hz. 20. O número de dentes com que nascemos, o número mínimo de movimentos para resolver um Cubo Mágico. 
+				E quem nunca quis ter um 20 a matemática? 20 segundos, o tempo que se demora a encher uma garrafa de 1 litro de água. 20 minutos, o tempo que o cérebro demora a registar que o estômago está cheio. 
+				20 horas, o tempo de voo record para um avião comercial. 20 dias, o tempo que Gandhi aguentou sem uma única refeição . 20 meses, o tempo médio de gestação de um elefante. 20 anos…</p>
+			<p>Tenho orgulho na minha família, nos meus amigos, nas minhas amigas, nas minhas namoradas, nas minhas parvoíces, nos meus concertos, nas minhas escolhas, em tudo na verdade. 
+				E se pudesse voltar atrás no tempo, faria tudo exatamente igual.</p>
+			<p>Hoje faço 20 anos. 2 décadas, 1/5 do século. E não fosse a Covid-19 aparecer em 2020, que por acaso são dois 20s juntos, e já que 19 é 20 - 1,
+				 provavelmente iria convidar 20 amigos para a minha festa de aniversário, que teria início às 20h, algures em Coimbra, onde, a meio da noite, o local e as horas já não iriam interessar.</p>
+			<br>
+			<h1>Software</h1>
+			<hr />
+			<li>Adobe Premiere Pro</li>
+		</div>
+		<div class="window closed" data-title="Info">
+			<h1>Referências</h1>
+			<hr />
+			<p><a href="https://html5-templates.com/preview/windows.html" target="_blank" rel="noopener noreferrer">Template - html, css e javascript</a></p>
+			<p><a href="https://www.dafont.com/leviwindows.font?text=All+your+base+belong+to+us.+Cancel+OK" target="_blank" rel="noopener noreferrer">Levi Windows font</a></p>
+			<p><a href="https://win98icons.alexmeub.com/" target="_blank" rel="noopener noreferrer">Windows 98 icon pack</a></p>
+			<p><a href="https://archive.org/details/windowsxpstartup_201910" target="_blank" rel="noopener noreferrer">Windows XP sound pack</a></p>
+			<br>
+			<h1>portfolioXP no GitHub</h1>
+			<hr />
+			<p><a href="https://github.com/thomaspfresco/portfolio" target="_blank" rel="noopener noreferrer">portfolioXP</a></p>
+			<br>
+			<h1>Documentação Consultada</h1>
+			<hr />
+			<p><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">w3schools</a></p>
+			
+		</div>
+
+		<div class="internet closed">
+			<div class="internetHeader">
+				Error: Internet Explorer
+				<div class=buttonClose>
+					x
+				</div>
+			</div>
+			<div class="internetIcon">
+				<img src="icons/msg_error.ico" alt="profile" width="50" height="50">
+			</div>
+			<div class="internetText">
+				Internet Explorer deixou de funcionar.
+			</div>
+			<div class="button">
+				OK
+			</div>
+		</div>
+
+		<!--thomas fresco-->
+
+		<div class="exe closed" style="height: 447px;">
+			<div class="pictureHeader">
+				<strong>thomas.jpg</strong>
+				<div class="exeClose" style="top: 12px;">
+					x
+				</div>
+			</div>
+			<div class="exeContent" style="padding-top: 4px;">
+				<img src="pictures/thomas.jpg" alt="codigo" width="300"></a>
+			</div>
+		</div>
+
+		<!--codigo-->
+
+		<div class="exe closed">
+			<div class="internetHeader">
+				<strong>codigo.exe</strong>
+				<div class="exeClose">
+					x
+				</div>
+			</div>
+			<div class="exeContent" style="padding-top: 4px;">
+				<img src="gifs/codigo.gif" alt="codigo" width="300" height="300"></a>
+			</div>
+		</div>
+
+		<div class="popup closed">
+			<div class="popupHeader">
+				GitHub
+				<div class=popupClose>
+					x
+				</div>
+			</div>
+			<div class="internetIcon">
+				<img src="icons/msg_information.ico" alt="profile" width="50" height="50">
+			</div>
+			<div class="internetText">
+				pretende abrir o repositório GitHub?
+			</div>
+			<div class="button"> 
+				OK
+			</div>
+		</div>
+
+		<!--arduino-->
+
+		<div class="exe closed">
+			<div class="internetHeader">
+				<strong>arduino.exe</strong>
+				<div class="exeClose">
+					x
+				</div>
+			</div>
+			<div class="exeContent" style="padding-top: 4px;">
+				<img src="gifs/arduino.gif" alt="arduino" width="300" height="300">
+			</div>
+		</div>
+
+		<div class="exe closed" style="height: 447px;">
+			<div class="pictureHeader">
+				<strong>Arduino.mov</strong>
+				<div class="exeClose">
+					x
+				</div>
+			</div>
+			<a href="https://www.youtube.com/watch?v=kl2YZFYL8FU" target="_blank" rel="noopener noreferrer">
+				<div class="exeContent" style="padding-top: 4px;">
+			    <div class="imageContainer" style="height: 401px;">
+					<img src="pictures/arduino.jpg" alt="arduino" width="300">
+					<div class="textImagem">
+						<div style="position: absolute; top: 47%; bottom: 0; left: 0; right: 0;">
+							abrir em youtube.com
+						</div>
+					</div>
+				</div>
+			</a>
+			</div>
+		</div>
+
+		<div class="popup closed">
+			<div class="popupHeader">
+				GitHub
+				<div class=popupClose>
+					x
+				</div>
+			</div>
+			<div class="internetIcon">
+				<img src="icons/msg_information.ico" alt="profile" width="50" height="50">
+			</div>
+			<div class="internetText">
+				pretende abrir o repositório GitHub?
+			</div>
+			<div class="button"> 
+				OK
+			</div>
+		</div>
+
+		<!--comunicacao grafica-->
+
+		<div class="exe closed" style="height: 267px;">
+			<div class="internetHeader">
+				<strong>comunicacao_grafica.exe</strong>
+				<div class="exeClose">
+					x
+				</div>
+			</div>
+			<div class="exeContent" style="padding-top: 4px;">
+				<img src="gifs/comunicacao.gif" alt="arduino" width="300">
+			</div>
+		</div>
+
+		<div class="exe closed" style="height: 347px;">
+			<div class="pictureHeader">
+				<strong>sweat.png</strong>
+				<div class="exeClose">
+					x
+				</div>
+			</div>
+			<a href="https://www.instagram.com/criptomoelas/" target="_blank" rel="noopener noreferrer">
+				<div class="exeContent" style="padding-top: 4px;">
+			    <div class="imageContainer">
+					<img src="pictures/sweats.jpg" alt="sweats" width="300">
+					<div class="textImagem">
+						<div style="position: absolute; top: 45%; bottom: 0; left: 0; right: 0;">
+							abrir em instagram.com
+						</div>
+					</div>
+				</div>
+			</a>
+			</div>
+		</div>
+		
+		<div class="exe closed" style="height: 347px;">
+			<div class="pictureHeader">
+				<strong>notifyme.png</strong>
+				<div class="exeClose">
+					x
+				</div>
+			</div>
+			<a href="https://www.instagram.com/notify.me_app/" target="_blank" rel="noopener noreferrer">
+				<div class="exeContent" style="padding-top: 4px;">
+			    <div class="imageContainer">
+					<img src="pictures/notifyme.jpg" alt="notifyme" width="300">
+					<div class="textImagem">
+						<div style="position: absolute; top: 45%; bottom: 0; left: 0; right: 0;">
+							abrir em instagram.com
+						</div>
+					</div>
+				</div>
+			</a>
+			</div>
+		</div>
+
+		<div class="exe closed" style="height: 447px;">
+			<div class="pictureHeader">
+				<strong>design_com_lata.jpeg</strong>
+				<div class="exeClose">
+					x
+				</div>
+			</div>
+			<a href="https://conservasdeportugal.com/exposicao-trabalhos-do-concurso-design-design-com-lata-2021/" target="_blank" rel="noopener noreferrer">
+				<div class="exeContent" style="padding-top: 4px;">
+			    <div class="imageContainer" style="height: 400px;">
+					<img src="pictures/lata.jpg" alt="lata" width="300">
+					<div class="textImagem">
+						<div style="position: absolute; top: 47%; bottom: 0; left: 0; right: 0;">
+							abrir em conservasdeportugal.com
+						</div>
+					</div>
+				</div>
+			</a>
+			</div>
+		</div>
+
+		<!--audio-->
+
+		<div class="exe closed">
+			<div class="internetHeader">
+				<strong>audio.exe</strong>
+				<div class="exeClose">
+					x
+				</div>
+			</div>
+			<div class="exeContent" style="padding-top: 4px;">
+				<img src="gifs/audio.gif" alt="arduino" width="300" height="300">
+			</div>
+		</div>
+
+		<div class="exe closed" style="height: 347px;">
+			<div class="pictureHeader">
+				<strong>keep_walking.png</strong>
+				<div class="exeClose">
+					x
+				</div>
+			</div>
+			<a href="https://youtu.be/kOiXaVtIhzk" target="_blank" rel="noopener noreferrer">
+				<div class="exeContent" style="padding-top: 4px;">
+			    <div class="imageContainer">
+					<img src="pictures/cover.JPG" alt="cover" width="300">
+					<div class="textImagem">
+						<div style="position: absolute; top: 47%; bottom: 0; left: 0; right: 0;">
+							abrir em youtube.com
+						</div>
+					</div>
+				</div>
+			</a>
+			</div>
+		</div>
+
+		<div class="popup closed">
+			<div class="popupHeader">
+				Linktree
+				<div class=popupClose>
+					x
+				</div>
+			</div>
+			<div class="internetIcon">
+				<img src="icons/msg_information.ico" alt="profile" width="50" height="50">
+			</div>
+			<div class="internetText">
+				pretende abrir o Linktree de FUGUE.?
+			</div>
+			<div class="button"> 
+				OK
+			</div>
+		</div>
+
+		<!--fotografia-->
+		
+		<div class="exe closed">
+			<div class="internetHeader">
+				<strong>fotografia.exe</strong>
+				<div class="exeClose">
+					x
+				</div>
+			</div>
+			<div class="exeContent" style="padding-top: 4px;">
+				<img src="gifs/fotografia.gif" alt="arduino" width="300" height="300">
+			</div>
+		</div>
+
+		<div class="exe closed" style="height: 447px;">
+			<div class="pictureHeader">
+				<strong>retrato.gif</strong>
+				<div class="exeClose" style="top: 12px;">
+					x
+				</div>
+			</div>
+			<div class="exeContent" style="padding-top: 4px;">
+				<img src="pictures/ines.jpg" alt="codigo" width="300" id="retrato"></a>
+			</div>
+		</div>
+
+		<div class="exe closed" style="height: 447px;">
+			<div class="pictureHeader">
+				<strong>experimental.gif</strong>
+				<div class="exeClose" style="top: 12px;">
+					x
+				</div>
+			</div>
+			<div class="exeContent" style="padding-top: 4px;">
+				<img src="pictures/monkey.jpg" alt="codigo" width="300" id="experimental"></a>
+			</div>
+		</div>
+
+		<div class="exe closed" style="height: 272px;">
+			<div class="pictureHeader">
+				<strong>objeto.gif</strong>
+				<div class="exeClose" style="top: 12px;">
+					x
+				</div>
+			</div>
+			<div class="exeContent" style="padding-top: 4px;">
+				<img src="pictures/greek.jpg" alt="codigo" width="300" id="objeto"></a>
+			</div>
+		</div>
+
+		<!--video-->
+
+		<div class="exe closed">
+			<div class="internetHeader">
+				<strong>video.exe</strong>
+				<div class="exeClose">
+					x
+				</div>
+			</div>
+			<div class="exeContent" style="padding-top: 4px;">
+				<img src="gifs/video.gif" alt="arduino" width="300" height="300">
+			</div>
+		</div>
+
+		<div class="exe closed" style="height: 272px;">
+			<div class="pictureHeader">
+				<strong>20.mov</strong>
+				<div class="exeClose">
+					x
+				</div>
+			</div>
+			<a href="https://www.youtube.com/watch?v=C3aHSh8xC9Y" target="_blank" rel="noopener noreferrer">
+				<div class="exeContent" style="padding-top: 4px;">
+			    <div class="imageContainer" style="height: 225px;">
+					<img src="pictures/20.jpg" alt="20" width="300">
+					<div class="textImagem">
+						<div style="position: absolute; top: 46%; bottom: 0; left: 0; right: 0;">
+							abrir em youtube.com
+						</div>
+					</div>
+				</div>
+			</a>
+			</div>
+		</div>
+
+		<div id="taskbar">
+		</div>
+
+		<div id="icons">
+			<a class="openWindow" data-id="0">
+				<img src="icons/directory_open_file_mydocs.ico" alt="profile" width="50" height="50">
+
+			</a>
+			<a class="openWindow" data-id="1"><img src="icons/console_prompt.ico" alt="codigo" width="50"height="50"></a>
+			<a class="openWindow" data-id="2"><img src="icons/expansion_board.ico" alt="arduino" width="50"height="50"></a>
+			<a class="openWindow" data-id="3"><img src="icons/paintbrush.ico" alt="comunicacao" width="50"height="50"></a>
+			<a class="openWindow" data-id="4"><img src="icons/cd_audio_cd_a.ico" alt="audio" width="50" height="50"></a>
+			<a class="openWindow" data-id="5"><img src="icons/camera.ico" alt="fotografia" width="50" height="50"></a>
+			<a class="openWindow" data-id="6"><img src="icons/media_player.ico" alt="video" width="50" height="50"></a>
+		</div>
+
+		<div id="iconsRight">
+			<a class="openWindow" data-id="7"><img src="icons/help_book_big.ico" alt="info" width="50"height="50"></a>
+			<a class="openWindow" data-id="8"><img src="icons/url1.ico" alt="explorer" width="50" height="50"></a>
+		</div>
+
+		<div id="recycleBin">
+			<a class="openWindow" data-id="9"><img id="imgRecBin" src="icons/recycle_bin_empty.ico" alt="recycleBin"width="50" height="50"></a>
+		</div>
+
+		<div id="linkedin">
+			<a href="https://www.linkedin.com/in/thomas-fresco-a19298235" target="_blank" rel="noopener noreferrer"
+				class="socialContent"> <img src="icons/linkedin.png" height="23" alt="LinkedIn"></a>
+		</div>
+		<div id="github">
+			<a href="https://github.com/thomaspfresco" target="_blank" rel="noopener noreferrer" class="socialContent">
+				<img src="icons/github.png" height="23" alt="GitHub"></a>
+		</div>
+		<div id="instagram">
+			<a href="https://www.instagram.com/thomaspfresco/" target="_blank" rel="noopener noreferrer"
+				class="socialContent"> <img src="icons/instagram.png" height="23" alt="Instagram"></a>
+		</div>
+		<div id="mail">
+			<a href="mailto:thomas@fresco.pt" target="_blank" rel="noopener noreferrer"
+				class="mailContent">thomas@fresco.pt</a>
+		</div>
+
+		<div id="start">
+			<img src="icons/p2.png" height="18" alt="portfolioXP" onClick="refreshPage()" class="socialContent"></a>
+		</div>
+
+	</div>
+
+	<div id="blueScreen"> 
+			<img src="pictures/blueScreen.jpg" class="loading" id="blue" height="75%">
+	</div>
+</body>
+
+</html>
